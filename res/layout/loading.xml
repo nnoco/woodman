@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loading">
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/loading_tvStatus"
+        android:background="#77000000"
+        android:textColor="#dddddd"
+        android:text="Status Bar"/>
+    
+    <ImageView
+        android:id="@+id/loading_ivLoading"
+        android:contentDescription="로딩 중"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loading_tvStatus"
+        android:src="@drawable/now_loading"/>
+
+</RelativeLayout>

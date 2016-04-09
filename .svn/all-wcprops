@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/woodman/!svn/ver/2/trunk/Woodman
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/woodman/!svn/ver/3/trunk/Woodman/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/woodman/!svn/ver/3/trunk/Woodman/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/woodman/!svn/ver/3/trunk/Woodman/.project
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/woodman/!svn/ver/3/trunk/Woodman/proguard.cfg
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/woodman/!svn/ver/4/trunk/Woodman/.classpath
+END

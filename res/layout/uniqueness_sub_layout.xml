@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 타이틀 바 -->
+
+    <RelativeLayout
+        android:id="@+id/uniqueness_sub_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/uniqueness_sub_btBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/uniqueness_sub_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/uniqueness_sub_btComplete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/complete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/uniqueness_sub_loTitle"
+        android:background="@drawable/background">
+
+        <Button
+            android:id="@+id/uniqueness_sub_btNewItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/uniqueness_add_new_item"
+            android:textSize="20dp" />
+        
+        <EditText
+	        android:id="@+id/uniqueness_sub_etMyItems"
+	        android:layout_margin="7dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="200dp"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="top"
+	        android:inputType="textMultiLine"/>
+        
+        <ListView 
+            android:id="@+id/uniqueness_sub_lvDBItems"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/uniqueness_sub_btNewItem"
+            android:layout_above="@id/uniqueness_sub_etMyItems"
+            android:cacheColorHint="#00000000"/>
+    </RelativeLayout>
+
+</RelativeLayout>

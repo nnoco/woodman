@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/generals_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/generals_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+        
+        <TextView
+            android:id="@+id/generals_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            />
+        
+        <Button
+            android:id="@+id/generals_btComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/generals_loTitle"
+	    android:background="@drawable/background"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/generals_group" />
+		
+	    <EditText
+	        android:id="@+id/generals_tvGroup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <requestFocus />
+	    </EditText>
+		
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/generals_standardLandNo" />
+		
+	    <EditText
+	        android:id="@+id/generals_tvStandardLandNo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="number" />
+		
+	    <TextView
+	        android:id="@+id/TextView01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/generals_GPSNo" />
+		
+	    <EditText
+	        android:id="@+id/generals_tvGPSNo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="number" />
+		
+	    <TextView
+	        android:id="@+id/TextView02"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/generals_Picture" />
+		
+	    <EditText
+	        android:id="@+id/generals_tvPicture"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="현재 사진 기능은 이용할 수 없습니다."
+	        android:enabled="false"/>
+
+</LinearLayout>
+</RelativeLayout>

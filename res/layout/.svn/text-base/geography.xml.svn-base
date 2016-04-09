@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/geography_bt1"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/geography_bt2"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/geography_bt3"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/geography_bt4"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/geography_bt5"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/geography_bt6"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/geography_bt7"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/geography_bt8"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/geography_bt9"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="9" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/geography_bt10"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:text="10" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

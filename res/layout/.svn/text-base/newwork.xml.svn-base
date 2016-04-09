@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 타이틀 바 -->
+
+    <RelativeLayout
+        android:id="@+id/newwork_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/newwork_btBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/newwork_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_btComplete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/complete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/newwork_loTitle"
+        android:background="@drawable/background"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/newwork_generals"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_generals"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_others"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_others"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_species"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_species"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_survey"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_survey"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_results"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_results"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_btRename"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_rename"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/newwork_finish"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="15dp"
+            android:text="@string/newwork_finish"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

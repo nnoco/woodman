@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/main_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        
+        <TextView
+            android:id="@+id/newwork_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="@string/app_name"
+            />
+    </RelativeLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/main_loTitle"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@drawable/background">
+	    <Button
+	        android:id="@+id/main_newWork"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_new_work" />
+		
+	    <Button
+	        android:id="@+id/main_Load"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_load" />
+		
+	    <Button
+	        android:id="@+id/main_transmission"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_transmission" />
+		
+	    <Button
+	        android:id="@+id/main_preference"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_preference" />
+		
+	    <Button
+	        android:id="@+id/main_exit"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/main_exit" />
+
+	</LinearLayout>
+
+</RelativeLayout>

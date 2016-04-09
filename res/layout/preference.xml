@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/pref_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/pref_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+        
+        <TextView
+            android:id="@+id/pref_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="@string/title_preference"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/pref_loTitle"
+	    android:gravity="center|center_horizontal"
+	    android:orientation="vertical"
+	    android:background="@drawable/background">
+
+	    <Button
+	        android:id="@+id/pref_btSpecies"
+	android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="수종 관리" />
+	
+	
+	    <Button
+	        android:id="@+id/pref_btSubstratum"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="기타사항:하층식생 관리"/>
+	
+	
+	    <Button
+	        android:id="@+id/pref_btPremium"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="특이사항:할증요소 목록" />
+	
+	
+	    <Button
+	        android:id="@+id/pref_btDesignElement"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="특이사항:설계요소 목록" />
+	
+	
+	    <Button
+	        android:id="@+id/pref_btUniqGenerals"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="특이사항:일반사항 목록"/>
+	</LinearLayout>
+</RelativeLayout>

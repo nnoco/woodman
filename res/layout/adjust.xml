@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="1dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000" >
+
+        <!-- 타이틀 위치 -->
+
+        <RelativeLayout
+            android:id="@+id/adjust_loTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/title_bar"
+            android:padding="3dp" >
+
+            <Button
+                android:id="@+id/adjust_btSubstract"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="빼기" />
+
+            <TextView
+                android:id="@+id/adjust_tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/adjust_btClose"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/close" />
+           
+            <TextView
+                android:id="@+id/adjust_tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/adjust_btClose"
+                android:layout_alignTop="@id/adjust_btClose"
+                android:layout_toLeftOf="@id/adjust_btClose"
+                android:background="#77000000"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center_vertical"
+                android:text="수량" />
+            
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adjust_tlTable"
+            android:layout_below="@id/adjust_loTitle" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="6"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="6"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="6"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="28"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="28"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="28"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="8"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="8"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="8"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="30"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="30"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="30"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="10"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="10"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="32"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="32"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="32"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="12"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="12"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="12"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="34"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="34"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="34"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="14"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="14"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="14"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="36"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="36"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="36"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="16"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="16"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="16"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="38"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="38"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="38"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="18"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="18"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="18"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="40"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="40"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="40"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="20"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="20"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="20"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="42"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="42"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="42"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="22"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="22"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="22"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="44"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="44"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="44"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="24"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="24"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="24"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="46"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="46"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="46"
+                    android:text="@string/remove" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/adjust_btTree26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="26"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="26"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="26"
+                    android:text="@string/remove" />
+
+                <Button
+                    android:id="@+id/adjust_btTree48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="48"
+                    android:text="@string/tree" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="48"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/adjust_btRemove48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:tag="48"
+                    android:text="@string/remove" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

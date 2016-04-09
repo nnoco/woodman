@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/uniqueness_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/uniqueness_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+        
+        <TextView
+            android:id="@+id/generals_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="특이 사항"
+            />
+        
+        <Button
+            android:id="@+id/uniqueness_btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_below="@id/uniqueness_loTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:background="@drawable/background">	
+	    <Button
+	        android:id="@+id/uniqueness_btPremium"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="할증 요소" />
+			
+	    <Button
+	        android:id="@+id/uniqueness_btDesignElement"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="설계 요소" />
+			
+	    <Button
+	        android:id="@+id/uniqueness_btGenerals"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="일반 사항" />
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:text="직접 입력란"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+	    <EditText
+	        android:id="@+id/uniqeness_etInput"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="200dp"
+	        android:hint="여기에 직접 입력"
+	        android:gravity="top"
+	        android:inputType="textMultiLine" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	</LinearLayout>
+</RelativeLayout>

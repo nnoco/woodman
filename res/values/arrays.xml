@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="species_types">
+        <item>참나무류</item>
+        <item>침엽수류</item>
+        <item>활엽수류</item>
+        <item>기타</item>
+    </string-array>
+    
+    <string-array name="species_types_major">
+        <item>전체</item>
+        <item>참나무류</item>
+        <item>침엽수류</item>
+        <item>활엽수류</item>
+        <item>기타</item>
+    </string-array>
+    
+</resources>

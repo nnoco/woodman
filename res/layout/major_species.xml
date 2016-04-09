@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <!-- 타이틀 바 -->
+
+    <RelativeLayout
+        android:id="@+id/major_species_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/major_species_btBack"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/major_species_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_major_species"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/major_species_btComplete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/complete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/major_species_loSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/major_species_loTitle"
+        android:background="#000000" >
+
+        <Spinner
+            android:id="@+id/major_species_spType"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/major_species_etQuery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:lines="1"
+            android:hint="@string/type_query" />
+    </LinearLayout>
+
+    <!-- 내용 파트 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/major_species_loSearch"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="검색 목록"
+                android:textColor="#AA000000" />
+
+            <ListView
+                android:id="@+id/major_species_lvDBSpecies"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#22ffffff"
+                android:cacheColorHint="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="선택 목록"
+                android:textColor="#AA000000" />
+
+            <ListView
+                android:id="@+id/major_species_lvSeletedSpecies"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#22ffffff"
+                android:cacheColorHint="#00000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

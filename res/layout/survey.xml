@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/survey_mainLayout"
+    android:background="@drawable/background">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/survey_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/survey_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+        
+        <TextView
+            android:id="@+id/survey_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="@string/title_survey"
+            />
+        
+        <Button
+            android:id="@+id/survey_btComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/survey_llSummary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffda52"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="4dp">
+
+        <TextView
+            android:id="@+id/survey_tvSumAll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="합계 : 입목(1200), 제거(300), 제거율(40.00%)" />
+    </LinearLayout>
+	<ListView 
+	    android:id="@+id/survey_lvSpecies"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/survey_loTitle"
+	    android:layout_above="@id/survey_llSummary"
+	    android:cacheColorHint="#00000000"/>
+    
+	<!-- 팝업 창 떴을 때 배경 레이아웃을 덮어씌우는 마스크 -->
+	<FrameLayout
+	    android:id="@+id/survey_graymask"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentTop="true"
+	    android:background="#CC000000"
+	    android:visibility="invisible"/>
+</RelativeLayout>

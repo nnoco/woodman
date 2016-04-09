@@ -1,0 +1,67 @@
+package com.nnoco.text;
+
+/* (@)# Hangul.java
+ * 
+ */
+public class Hangul {
+	//============================================================//
+	// Const Literal Member Fields
+	//============================================================//
+	private static final char[] onsets = "¤¡¤¢¤¤¤§¤¨¤©¤±¤²¤³¤µ¤¶¤·¤¸¤¹¤º¤»¤¼¤½¤¾".toCharArray();
+	private static final char[] nucleus = "¤¿¤À¤Á¤Â¤Ã¤Ä¤Å¤Æ¤Ç¤È¤É¤Ê¤Ë¤Ì¤Í¤Î¤Ï¤Ð¤Ñ¤Ò¤Ó".toCharArray();
+	private static final char[] coda = "¤¡¤¢¤£¤¤¤¥¤¦¤§¤©¤ª¤«¤¬¤­¤®¤¯¤°¤±¤²¤´¤µ¤¶¤·¤¸¤º¤»¤¼¤½¤¾".toCharArray();
+
+	//============================================================//
+	// Constructors
+	//============================================================//
+	private Hangul(){ }
+	
+	
+	//============================================================//
+	// Class(static) Member Method
+	//============================================================//
+	/**
+	 * ÇÑ±Û ÅØ½ºÆ®·ÎºÎÅÍ ÃÊ¼º¸¸À» ÃßÃâÇÏ¿© ¹ÝÈ¯ÇÏ´Â ¸Þ¼­µå <br>
+	 * getOnset("ÇÑ±Û ÅØ½ºÆ®abc") È£Ãâ ½Ã<br>
+	 * "¤¾¤¡ ¤¼¤µ¤¼abc" ¹ÝÈ¯
+	 * @param str ÃÊ¼ºÀ» ÃßÃâÇÒ ¿øº» ¹®ÀÚ¿­ 
+	 * @return ÃÊ¼º ÃßÃâ °á°ú
+	 */
+	public static String getOnsets(String str){
+		StringBuilder result = new StringBuilder();
+		char c ='\0';
+		int indexOfOnset = 0;
+		
+		for(int i = 0 ; i < str.length() ; i++){
+			c = str.charAt(i);
+			
+			if(isHangul(c))
+			{
+				indexOfOnset = (c - '°¡') / 588;
+				result.append(onsets[indexOfOnset]);
+			} else {
+				result.append(c);
+			}
+		}
+		
+		return result.toString();
+	}
+	
+	// ÇÑ±Û ¹üÀ§ ÆÇ´Ü
+	private static boolean isHangul(char c){
+		return '°¡' <= c && c <= 'ÆR';
+	}
+	
+	// Á¶»çÀÇ ±¸ºÐÀ» À§ÇÑ Á¾¼ºÀ» °¡Áö°í ÀÖ´ÂÁö ÆÇ´Ü
+	public static boolean hasCoda(String text){
+		char lastChar = text.charAt(text.length()-1);
+		return (lastChar - '°¡') % 28 != 0;
+	}
+	
+	//============================================================//
+	// Main method for code test
+	//============================================================//
+	public static void main(String[] args) {
+		System.out.println(Hangul.getOnsets("ÇÑ±Û Å×½ºÆ®abc"));
+	}
+}

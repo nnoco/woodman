@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 타이틀 바 -->
+    <RelativeLayout
+        android:id="@+id/others_loTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/others_btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/buttonStyleSmall"/>
+        
+        <TextView
+            android:id="@+id/others_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="@string/title_others"
+            />
+    </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:layout_below="@id/others_loTitle"
+	    android:background="@drawable/background">	
+	    <Button
+	        android:id="@+id/others_btSlope"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="경사도" />
+		
+	    <Button
+	        android:id="@+id/others_btGeography"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="지리" />
+		
+	    <Button
+	        android:id="@+id/others_btUniqueness"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="특이사항" />
+			
+	    <Button
+	        android:id="@+id/others_btSubstratum"
+	        android:textSize="20dp"
+	        android:padding="15dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:text="하층 식생" />
+	
+	</LinearLayout>
+</RelativeLayout>

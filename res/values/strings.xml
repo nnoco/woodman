@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WoodmanActivity!</string>
+    <string name="app_name">나무꾼</string>
+    <string name="main_new_work">새 작업</string>
+    <string name="main_load">불러오기</string>
+    <string name="main_transmission">파일 전송</string>
+    <string name="main_preference">환경 설정</string>
+    <string name="main_exit">종료</string>
+    <string name="newwork_generals">기본 사항 입력</string>
+    <string name="newwork_others">기타 사항 입력</string>
+    <string name="newwork_species">주 수종 선택</string>
+    <string name="newwork_survey">매목 조사</string>
+    <string name="newwork_results">결과 보기</string>
+    <string name="newwork_rename">작업 이름 바꾸기</string>
+    <string name="newwork_finish">완료 후 새 작업</string>
+    <string name="generals_group">임소반</string>
+    <string name="generals_standardLandNo">표준지 번호</string>
+    <string name="generals_GPSNo">GPS 번호</string>
+    <string name="generals_Picture">사진</string>
+    <string name="substratum">하층 식생</string>
+    <string name="back">뒤로</string>
+    <string name="complete">완료</string>
+    <string name="title_newwork">새 작업</string>
+    <string name="title_load">불러오기</string>
+    <string name="title_transmission">파일 전송</string>
+    <string name="title_preference">환경 설정</string>
+    <string name="title_generals">기본 사항 입력</string>
+    <string name="title_others">기타 사항 입력</string>
+    <string name="title_survey">매목 조사</string>
+    <string name="add">추가</string>
+    <string name="title_pref_species">수종 관리</string>
+    <string name="title_pref_uniq_generals">특이사항 - 일반 항목</string>
+    <string name="title_pref_substratum">하층 식생 관리</string>
+    <string name="title_pref_premium">할증 요소 관리</string>
+    <string name="title_premium">할증 요소</string>
+    <string name="title_pref_design">설계 요소 관리</string>
+    <string name="title_major_species">주 수종 선택</string>
+    <string name="survey_btHeight">수고 입력</string>
+    <string name="survey_btTree">입목</string>
+    <string name="survey_btRemove">제거</string>
+    <string name="zero">0</string>
+    <string name="tree">입목</string>
+    <string name="remove">제거</string>
+    <string name="close">닫기</string>
+    <string name="save">저장</string>
+	<string name="type_query">검색어 입력</string>  
+	<string name="uniqueness_add_new_item">+ 새 항목 추가</string>  
+</resources>
